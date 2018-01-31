@@ -1,0 +1,183 @@
+// ------------------------------------------- BODY --------------------------------------- //
+body
+  background-color: rgb(14,17,20)
+  color: #cccccc
+  margin: 0 auto
+  width: 100%
+  height: auto
+  font-family: 'Open Sans', sans-serif
+h1
+  color: #cccccc
+  font-weight: 300
+figure
+  margin: auto
+// ----------------------------------------- CONTENT ----------------------------------------------- //
+.content
+  position: relative
+  z-index: 2
+  background-color: rgb(14,17,20)
+  margin-bottom: 400px
+  article
+    padding: 100px 0
+    max-width: 640px
+    margin: 0 auto
+    text-align: center
+img
+  max-width: 100%
+  max-height: 100%
+// PARALLAX
+.bird-box
+  position: relative
+  height: 750px
+  background:
+    image: url("../images/header/car.jpg")
+    size: 100% auto
+    position: top center
+    attachment: fixed
+    repeat: no-repeat
+  overflow: hidden
+  z-index: 3
+.logo
+  padding: 100px 0
+  max-width: 740px
+  margin: 0 auto
+  text-align: center
+  height: 100px
+  width: 100%
+  h2
+    color: #cccccc
+    margin: 0 auto
+    font-family: "Museo 700"
+    font-size: 72px
+.fore-bird
+  width: 960px
+  height: 500px
+  background:
+    image: url("../images/header/clem-onojeghuo-219194.jpg")
+    size: 100% auto
+    repeat: no-repeat
+  position: absolute
+  left: 50%
+  margin-left: -480px
+  top: 400px
+.column
+  float: left
+  width: 33.33%
+  height: 200px
+.row
+  &:after
+    content: ''
+    display: table
+    clear: both
+.car-pics
+  margin-bottom: 100px
+  figure
+    padding: 10px
+    margin-bottom: 5px
+    position: relative
+    opacity: 0
+    transform: translateX(20px)
+    transition: all 0.3s ease-in-out
+    overflow: hidden
+    &.is-showing
+      opacity: 1
+      transform: translateX(0px)
+    img
+      display: block
+      transform: scale(1)
+      transition: all 0.3s ease-in-out
+    &:hover
+      cursor: pointer
+      figcaption
+        left: 0%
+      img
+        transform: scale(1.5)
+  figcaption
+    position: absolute
+    bottom: 10px
+    left: -100%
+    background: #cccccc
+    color: black
+    padding: 2px 8px
+    font-size: 11px
+    transition: all 0.3s ease-in-out
+.large-window
+  height: 640px
+  background:
+    color: #cccccc
+    image: url("../images/cars/14.jpg")
+    size: contain
+    position: center top
+    repeat: repeat
+    attachment: fixed
+  margin-top: 100px
+  margin-bottom: 100px
+  border-radius: 50%
+  position: relative
+.window-tint
+  height: 640px
+  background-color: rgba(0,0,0,0.5)
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+.promo-text
+  color: #ffffff
+  font-weight: 100
+  font-size: 50px
+  line-height: 1.2
+  strong
+    display: block
+    font-size: 30px
+    font-style: italic
+  span
+    font-weight: 300
+    font-style: italic
+    font-size: 25px
+    color: rgba(255,255,255,0.6)
+  .window-cta
+    font-size: 20px
+    text-decoration: none
+    color: #ffffff
+    border: 1px solid #ffffff
+    padding: 5px 10px
+    transition: all 0.3s ease-in-out
+    &:hover
+      background-color: #ffffff
+      color: black
+.blog-posts
+  margin-top: 100px
+  .columns
+    float: left
+    width: 33.33%
+    height: 200px
+    position: relative
+    figure
+      padding: 10px
+  .car-1
+    transform: translate(100px,20px)
+  .car-2
+    z-index: 2
+  .car-3
+    transform: translate(-100px, 20px)
+// ---------------------------------------------------- FOOTER ------------------------------------ //
+footer
+  background-color: black
+  color: white
+  position: fixed
+  bottom: 0
+  width: 100%
+  .footer-stuff
+    margin: 0 auto
+    max-width: 640px
+  a
+    color: white
+  #submit
+    background: blue
+    color: #cccccc
+    margin-top: 10px
+    font-size: 20px
